@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'Inter',sans-serif;
+  font-size: 1.125rem
+}
+html,
+body {
+  background: #F9F1FF !important;
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize !important;
+}
+
+h5{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400
+}
+
+.subtitle {
+  font-family: 'Inter',sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: red;
+}
+
+p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background-color: red;
+}
+
+
+.button_large,
+.button_large2,
+.button2,
+button{
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  font-family: 'Inter',sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.button_large{
+  font-size: 1.25rem;
+}
+
+.button_large2,
+.button2{
+font-family: 'Fresca',sans-serif;
+font-size: 1rem;
+}
+
+.button_large2{
+font-size: 1.25rem;
+}
+
+a{
+font-family: 'Fresca',sans-serif;
+font-size: 1.5rem;
+}
+
+
+form {
+  max-width: 720px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+form h5 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #6F6F6F;
+  margin-bottom: 40px;
+}
+
+@layer base{
+  .subtitle{
+    @apply bg-black
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+

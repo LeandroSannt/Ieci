@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./form_admin.css">
+  <title>confirm_admin</title>
+
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+
+  background: #F4EDFA;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: 'Inter', sans-serif;
+}
+
+.firstSection{
+
+  background: #F4EDFA;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 24px 24px;
+}
+
+section .imgUser{
+background: linear-gradient(251.18deg, rgba(134, 90, 169, 0) 0%, rgba(134, 90, 169, 0.546875) 25.52%, rgba(134, 90, 169, 0.77385) 44.79%, #865AA9 67.19%);  width: 100%;
+  border-radius: 0 0 24px 24px;
+  height: 280px;
+
+}
+
+.imgUser .imgInformations{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  height: 100%;
+  margin-left: 40px;
+}
+
+.imgInformations::before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #EDDC7D;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.imgUser .imgInformations h2{
+
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+color: #EAEAEA;
+
+}
+
+.imgUser .imgInformations p {
+  max-width: 373px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #EFDBFE;
+  margin-top: 24px;
+}
+
+.infoContainer{
+  padding: 50px 40px;
+}
+
+.infoContainer h4{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #62498A;
+}
+
+.infoContainer .container{
+  margin-top:40px ;
+}
+
+.infoContainer .container >div{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.infoContainer .container >div strong{
+  font-size: 24px;
+  line-height: 29px;
+  color: #575757;
+}
+
+.infoContainer .container >div strong + strong{
+margin-top: 20px;
+}
+
+.infoContainer .container >div strong span{
+  font-weight: 400;
+}
+
+.infoContainer .container h2{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #62498A;
+}
+
+ a {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 435px;
+  height: 68px;
+  left: 183px;
+  top: 1407px;
+  background-color: #62498A;
+  color: #EFDBFE;
+  border: 4px solid #62498A;
+
+
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 10px #D9BCE6);
+  border-radius: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 60px;
+  font-weight: bold;
+  transition: all 400ms;
+
+}
+
+ a:hover{
+  background-color: inherit;
+  color: #62498A;
+  border: 4px solid #62498A;
+
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <section class="firstSection">
+      <div class="imgUser">
+        <div class="imgInformations">
+            <div>
+              <h2>Novo formulário <br/> recebido</h2>
+            </div>
+        </div>
+      </div>
+      <div class="infoContainer">
+        <h4>Um usuário finalizou o formulário necessário. Arraste para baixo para admnistrar a compra.</h4>
+
+        <div class="container">
+          <h2>Principais Dados</h2>
+
+          <div>
+            <strong>Nome: <span>{{findedCourse.paidPersonalData.name}}</span></strong>
+            <strong>CPF: <span>{{findedCourse.paidPersonalData.cpf}}</span></strong>
+            <strong>Telefone: <span>{{findedCourse.paidPersonalData.cell_number}}</span></strong>
+            <strong>Curso: <span>{{findedCourse.paidPersonalData.course}}</span></strong>
+            <strong>Valor da matrícula: <span>{{200}}</span></strong>
+          </div>
+        </div>
+      </div>
+
+      <a href='http://localhost:3000/administrador/administrador-ficha/{{courseUser.id}}'>Administrar Compra</a>
+
+    </section>
+
+
+  </main>
+
+</body>
+</html>
